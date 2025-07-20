@@ -44,7 +44,7 @@ export default function PromiseSection() {
         <motion.div
           /* slide the curtain right only while the section is visible */
           animate={{ translateX: imageInView? "100%" : "50%" }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="absolute inset-0 bg-white z-10 pointer-events-none"
         />
       </div>

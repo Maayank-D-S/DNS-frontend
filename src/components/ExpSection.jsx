@@ -78,14 +78,7 @@ export default function ExpSection() {
           At D&amp;S, we merge design, data, and deep tech to deliver an exceptional real estate experience. We don’t sell homes. We empower smarter decisions.
         </motion.p>
 
-        <motion.a
-          href="/story"
-          custom={3}
-          variants={textVariants}
-          className="inline-block px-6 py-2 border border-yellow-600 text-yellow-600 hover:bg-yellow-600 hover:text-white transition"
-        >
-          ABOUT US
-        </motion.a>
+        
       </motion.div>
     </section>
   );

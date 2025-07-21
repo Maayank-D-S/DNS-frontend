@@ -119,7 +119,7 @@ const Header = () => {
         <div className="
     absolute 
     top-16    
-    bottom-0 
+    bottom-24 
     inset-x-0 
     overflow-y-auto 
     pb-28    

@@ -1,12 +1,60 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const EnquiryModal = ({ isOpen, onClose }) => {
+  // form state
+  const path = import.meta.env.VITE_API_BASE;
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [country, setCountry] = useState("");
+  const [city, setCity] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [agree, setAgree] = useState(false);
+
+  // prevent body scroll when open
   useEffect(() => {
-    if (isOpen) document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "auto";
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    return () => { document.body.style.overflow = "auto"; };
   }, [isOpen]);
 
   if (!isOpen) return null;
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Required‑field validation
+    if (!name.trim() || !email.trim() || !mobile.trim()) {
+      alert("Please fill all required fields");
+      return;
+    }
+
+    const payload = { name, email, country, city, mobile };
+
+    try {
+      const res = await fetch(`${path}/customers`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+
+      if (res.ok) {
+        alert("Thank you for filling the form");
+        // reset form
+        setName("");
+        setEmail("");
+        setCountry("");
+        setCity("");
+        setMobile("");
+        setAgree(false);
+        onClose();
+      } else {
+        alert(data.error || "Submission failed");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("An unexpected error occurred");
+    }
+  };
 
   return (
     <div className="fixed inset-0 z-[100] bg-black/60 flex items-center justify-center px-4">
@@ -23,53 +71,66 @@ const EnquiryModal = ({ isOpen, onClose }) => {
           Request a call back
         </h2>
 
-        <form className="space-y-5">
+        <form className="space-y-5" onSubmit={handleSubmit}>
           <input
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             type="text"
             placeholder="Name*"
             className="w-full border-b border-gray-300 outline-none py-2"
           />
+
           <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             type="email"
-            placeholder="E-Mail ID*"
+            placeholder="E‑Mail ID*"
             className="w-full border-b border-gray-300 outline-none py-2"
           />
+
           <input
+            value={country}
+            onChange={(e) => setCountry(e.target.value)}
             type="text"
             placeholder="Country"
             className="w-full border-b border-gray-300 outline-none py-2"
           />
+
           <input
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
             type="text"
             placeholder="City"
             className="w-full border-b border-gray-300 outline-none py-2"
           />
-          {/* <select className="w-full border-b border-gray-300 py-2 bg-transparent">
-            <option>Select Country*</option>
-            <option>India</option>
-            <option>UAE</option>
-            <option>USA</option>
-          </select>
-          <select className="w-full border-b border-gray-300 py-2 bg-transparent">
-            <option>Select City*</option>
-            <option>Mumbai</option>
-            <option>Pune</option>
-            <option>Bangalore</option>
-          </select> */}
+
           <input
+            value={mobile}
+            onChange={(e) => setMobile(e.target.value)}
             type="tel"
             placeholder="Enter Mobile Number*"
             className="w-full border-b border-gray-300 outline-none py-2"
           />
+
           <label className="flex items-start text-sm text-gray-600 gap-2">
-            <input type="checkbox" className="mt-1" />
+            <input
+              type="checkbox"
+              checked={agree}
+              onChange={(e) => setAgree(e.target.checked)}
+              className="mt-1"
+            />
             By checking this box, you agree to our{" "}
-            <a href="#" className="text-yellow-700 underline">Privacy Policy</a>
-            &nbsp;and consent to be contacted with relevant updates.
+            <a href="#" className="text-yellow-700 underline">
+              Privacy Policy
+            </a>{" "}
+            and consent to be contacted with relevant updates.
           </label>
+
           <button
             type="submit"
-            className="bg-yellow-700 text-white py-2 px-6 rounded hover:bg-yellow-800 w-full"
+            disabled={!agree}
+            className="bg-yellow-700 text-white py-2 px-6 rounded w-full 
+                      hover:bg-yellow-800 transition disabled:opacity-50 disabled:cursor-not-allowed"
           >
             Submit
           </button>

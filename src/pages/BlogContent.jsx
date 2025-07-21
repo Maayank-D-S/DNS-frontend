@@ -4,8 +4,12 @@ import Footer from '../components/Footer'
 import BlogComp from '../components/BlogComp'
 import { useLocation, useParams } from "react-router-dom";
 import blogs from "../data/blogs"; // ✅ Import blog list
-
+import { useEffect } from 'react';
 const BlogContent = ({content}) => {
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
   const { id } = useParams();
   const blogId = parseInt(id, 10); // convert string to number
   const blog = blogs.find((b) => b.id === blogId); // ✅ lookup blog from static data

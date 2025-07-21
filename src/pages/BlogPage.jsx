@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
-
+import { useEffect } from "react";
 import blogs from "../data/blogs";
 
 const fadeInUp = {
@@ -12,6 +12,10 @@ const fadeInUp = {
 };
 
 const BlogGrid = () => {
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
   const navigate = useNavigate();
   return (
     <div>

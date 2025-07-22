@@ -250,7 +250,7 @@ society to confirm there are no outstanding payments.`,
   },
   {
     heading:"Simplify Every Step with UnBroker",
-    image:"/blog/last.jpg",
+    image:"/blog/last.png",
     copy:"UnBroker is your AI-powered real estate guide. We help you decode legal documents, answer queries, and verify properties—so you make confident, informed decisions without relying on middlemen. Experience smarter homebuying with UnBroker.",
   }
   ]
@@ -286,7 +286,7 @@ reflects accurate ownership and payment details.`,
   },
   {
     heading:"Simplify Every Step with UnBroker",
-    image:"/blog/last.jpg",
+    image:"/blog/last.png",
     copy:"UnBroker is your AI-powered brokerage assistant, helping you understand legal steps, verify documents, and resolve queries instantly. Say goodbye to confusion and hidden risks—UnBroker ensures your property decisions are smart, safe, and seamless.",
   }
   ]
@@ -320,7 +320,7 @@ redevelopment or tenancy issues in the building.`,
   },
   {
     heading:"Simplify Every Step with UnBroker",
-    image:"/blog/last.jpg",
+    image:"/blog/last.png",
     copy:"UnBroker uses AI to guide you through legal formalities, verify documents, and answer real estate queries instantly. It’s your digital co-pilot for stress-free, smarter home buying or selling in Mumbai—minus the brokerage chaos.",
   }
   ]
@@ -356,7 +356,7 @@ are transparent and legally vetted.`,
   },
   {
     heading:"Simplify Every Step with UnBroker",
-    image:"/blog/last.jpg",
+    image:"/blog/last.png",
     copy:`UnBroker helps decode Dubai’s property laws, verifies documents instantly, and ensures
 you’re guided at every step. Whether you're an expat or investor, our AI-driven platform
 empowers smarter, stress-free property decisions—without the hidden costs of traditional

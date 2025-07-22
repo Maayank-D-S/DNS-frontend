@@ -1,4 +1,194 @@
 const blogs = [
+  { 
+    id:8,
+    title: "Legal Steps to Buy or Sell Property in Noida",
+    image:"/blog/1.jpg",
+    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
+    content:[{
+      heading:"Verifying the Property Before Sale",
+      image: "/blog6/1.png",
+      copy:"Before any deal, ensure the property has a clear title, no pending loans, and is approved by Noida Authority. Check original sale deed, encumbrance certificate, tax receipts, and builder approvals to avoid legal hurdles later.",
+    },
+  {
+    heading:"Drafting the Agreement to Sell",
+    image:"/blog/2.jpg",
+    copy:`An Agreement to Sell outlines the price, payment terms, and possession timeline. It protects
+both parties before final registration. Also collect a no dues certificate from the builder or
+society to confirm there are no outstanding payments.`,
+  },
+  {
+    heading:"Registration and Stamp Duty",
+    image:"/blog/3.jpg",
+    copy:"Property transfer becomes official after paying stamp duty and registering the sale deed at the Sub-Registrar’s office. Both parties must be present with valid documents and witnesses. Always cross-check the deed for accuracy before signing.",
+  },
+  {
+    heading:"Post-Sale Handover and Mutation",
+    image:"/blog/4.jpg",
+    copy:"After registration, the buyer must update property records with the Noida Authority and inform the builder or RWA. This ensures future utility bills, taxes, and legal responsibilities reflect the new owner’s name correctly.",
+  },
+  {
+    heading:"Simplify Every Step with UnBroker",
+    image:"/blog/last.png",
+    copy:"UnBroker is your AI-powered real estate guide. We help you decode legal documents, answer queries, and verify properties—so you make confident, informed decisions without relying on middlemen. Experience smarter homebuying with UnBroker.",
+  }
+  ]
+  },
+  { 
+    id:9,
+    title: "Legal Steps to Buy or Sell Property in Pune",
+    image:"/blog/2.jpg",
+    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
+    content:[{
+      heading:"Verifying the Property Before Sale",
+      image: "/blog/1.jpg",
+      copy:"Begin by checking the property's title deed, latest 7/12 extract, encumbrance certificate, and approved layout plans. Confirm the seller has full rights and no legal or financial disputes are attached to the property or land.",
+    },
+  {
+    heading:"Drafting the Agreement to Sell",
+    image:"/blog/2.jpg",
+    copy:`The Agreement to Sell captures payment terms, timelines, and handover details. It’s signed
+on stamp paper before registration. Buyers should also collect a no objection certificate
+(NOC) from the society and builder, confirming no dues remain.`,
+  },
+  {
+    heading:"Registration and Stamp Duty",
+    image:"/blog/3.jpg",
+    copy:`The sale deed must be registered with the Pune Sub-Registrar. Stamp duty is around 6%,
+and both parties need to be physically present with valid ID and PAN. Ensure the agreement
+reflects accurate ownership and payment details.`,
+  },
+  {
+    heading:"Post-Sale Handover and Mutation",
+    image:"/blog/4.jpg",
+    copy:"After registration, the buyer must apply for mutation at the Pune Municipal Corporation or revenue office. This updates tax and property records, ensuring all future correspondence and bills are directed to the new owner.",
+  },
+  {
+    heading:"Simplify Every Step with UnBroker",
+    image:"/blog/last.png",
+    copy:"UnBroker is your AI-powered brokerage assistant, helping you understand legal steps, verify documents, and resolve queries instantly. Say goodbye to confusion and hidden risks—UnBroker ensures your property decisions are smart, safe, and seamless.",
+  }
+  ]
+  },
+  { 
+    id:10,
+    title: "Legal Steps to Buy or Sell Property in Mumbai",
+    image:"/blog/3.jpg",
+    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
+    content:[{
+      heading:"Verifying the Property Before Sale",
+      image: "/blog/1.jpg",
+      copy:"Start by verifying the property's title, latest property card, encumbrance certificate, and society share certificate. For flats, ensure the building has an Occupancy Certificate and the seller has paid all municipal and society dues.",
+    },
+  {
+    heading:"Drafting the Agreement to Sell",
+    image:"/blog/2.jpg",
+    copy:`This agreement defines the sale value, payment plan, and timeline. It is executed on stamp
+paper before registration. Buyers must also obtain society NOC and confirm any ongoing
+redevelopment or tenancy issues in the building.`,
+  },
+  {
+    heading:"3. Registration and Stamp Duty",
+    image:"/blog/3.jpg",
+    copy:"Registration is done at the Mumbai Sub-Registrar’s office after paying stamp duty (typically 5%). Both parties must be present with identity proofs. Ensure the sale deed has correct flat details, payment confirmation, and seller disclosures.",
+  },
+  {
+    heading:"Post-Sale Handover and Mutation",
+    image:"/blog/4.jpg",
+    copy:"Post-registration, apply for mutation with BMC or MHADA (if applicable) to transfer property records. Update the society records with the buyer’s name to ensure correct billing and legal recognition in future transactions.",
+  },
+  {
+    heading:"Simplify Every Step with UnBroker",
+    image:"/blog/last.png",
+    copy:"UnBroker uses AI to guide you through legal formalities, verify documents, and answer real estate queries instantly. It’s your digital co-pilot for stress-free, smarter home buying or selling in Mumbai—minus the brokerage chaos.",
+  }
+  ]
+  },
+  { 
+    id:11,
+    title: "Legal Steps to Buy or Sell Property in Dubai",
+    image:"/blog/4.jpg",
+    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
+    content:[{
+      heading:"Verifying the Property Before Sale",
+      image: "/blog/1.jpg",
+      copy:`Buyers must verify the property’s title through the Dubai Land Department (DLD) and
+confirm the seller's ownership. Check if the property is mortgaged and whether all service
+charges to the developer or community are cleared.`,
+    },
+  {
+    heading:"Drafting the Memorandum of Understanding (MoU)",
+    image:"/blog/2.jpg",
+    copy:`The MoU (Form F) outlines sale terms, signed by both parties through RERA-registered
+agents. A 10% deposit is typically paid by the buyer to secure the deal. Ensure all clauses
+are transparent and legally vetted.`,
+  },
+  {
+    heading:"Obtaining the NOC and Transfer",
+    image:"/blog/3.jpg",
+    copy:"The seller must get a No Objection Certificate (NOC) from the developer to proceed with the transfer. The final transaction is completed at the DLD trustee office, where the buyer pays, and the new title deed is issued.",
+  },
+  {
+    heading:"Final Updates and Handover",
+    image:"/blog/4.jpg",
+    copy:"After transfer, utility accounts, service contracts, and community records must be updated in the buyer's name. It’s essential to inspect the property, collect access cards, and ensure all prior dues are fully settled before moving in.",
+  },
+  {
+    heading:"Simplify Every Step with UnBroker",
+    image:"/blog/last.png",
+    copy:`UnBroker helps decode Dubai’s property laws, verifies documents instantly, and ensures
+you’re guided at every step. Whether you're an expat or investor, our AI-driven platform
+empowers smarter, stress-free property decisions—without the hidden costs of traditional
+brokers.`,
+  }
+  ]
+  },
+  { 
+    id:12,
+    title: "Why Are Property Prices Rising in Indian Metro Cities?",
+    image:"/blog8/1.jpg",
+    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
+    content:[{
+      heading:"Post-COVID Real Estate Boom",
+      image: "/blog8/1.jpg",
+      copy:`After two years of slowdown, homebuyers have returned with renewed confidence. Low
+interest rates, increased disposable income, and the emotional need for owned spaces have
+triggered massive demand in major metros, pushing prices to record levels.`,
+    },
+  {
+    heading:"Limited Supply, High Demand",
+    image:"/blog8/2.jpg",
+    copy:`While demand surged, supply has remained restricted. Regulatory delays, land acquisition
+challenges, and slow project launches—especially in urban hubs like Delhi NCR—have
+created a gap, inflating prices across premium and mid-segment housing.`,
+  },
+  {
+    heading:"Infrastructure Push in Delhi NCR",
+    image:"/blog8/3.jpg",
+    copy:"Delhi NCR has seen large-scale infrastructure investments—like the Delhi-Mumbai Expressway, Dwarka Expressway, and Noida Airport—making surrounding areas more attractive for end users and investors. This has fueled rapid price hikes in micro-markets like Gurugram, Noida, and Ghaziabad.",
+  },
+  {
+    heading:"Shift Towards Branded Developers",
+    image:"/blog8/4.jpg",
+    copy:"With rising buyer awareness, demand has shifted to branded and RERA-compliant developers who offer timely delivery and better quality. This has concentrated demand in fewer, more credible projects—driving up prices in those communities.",
+  },
+  {
+    heading:"Rise of NRI and Investor Activity",
+    image:"/blog8/5.jpg",
+    copy:`With a weak rupee and growing confidence in Indian real estate, NRIs and institutional
+investors are re-entering the market aggressively. Delhi NCR, due to its connectivity and
+commercial relevance, has become a top choice, contributing to the surge.`,
+  },
+  {
+    heading:"Make Informed Decisions with UnBroker",
+    image:"/blog8/abc.png",
+    copy:`Rising prices make every decision count. UnBroker helps you analyze real-time trends,
+identify high-potential micro-markets, and verify project authenticity—all powered by AI.
+
+Whether you’re a first-time buyer or a seasoned investor, UnBroker empowers smarter,
+data-backed property decisions.`,
+  }
+  ]
+  },
   {
     id:1,
     title: "Building Information Modeling (BIM)",
@@ -221,196 +411,7 @@ and resilience.
   
   ]
   },
-  { 
-    id:8,
-    title: "Legal Steps to Buy or Sell Property in Noida",
-    image:"/blog/1.jpg",
-    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
-    content:[{
-      heading:"Verifying the Property Before Sale",
-      image: "/blog6/1.png",
-      copy:"Before any deal, ensure the property has a clear title, no pending loans, and is approved by Noida Authority. Check original sale deed, encumbrance certificate, tax receipts, and builder approvals to avoid legal hurdles later.",
-    },
-  {
-    heading:"Drafting the Agreement to Sell",
-    image:"/blog/2.jpg",
-    copy:`An Agreement to Sell outlines the price, payment terms, and possession timeline. It protects
-both parties before final registration. Also collect a no dues certificate from the builder or
-society to confirm there are no outstanding payments.`,
-  },
-  {
-    heading:"Registration and Stamp Duty",
-    image:"/blog/3.jpg",
-    copy:"Property transfer becomes official after paying stamp duty and registering the sale deed at the Sub-Registrar’s office. Both parties must be present with valid documents and witnesses. Always cross-check the deed for accuracy before signing.",
-  },
-  {
-    heading:"Post-Sale Handover and Mutation",
-    image:"/blog/4.jpg",
-    copy:"After registration, the buyer must update property records with the Noida Authority and inform the builder or RWA. This ensures future utility bills, taxes, and legal responsibilities reflect the new owner’s name correctly.",
-  },
-  {
-    heading:"Simplify Every Step with UnBroker",
-    image:"/blog/last.png",
-    copy:"UnBroker is your AI-powered real estate guide. We help you decode legal documents, answer queries, and verify properties—so you make confident, informed decisions without relying on middlemen. Experience smarter homebuying with UnBroker.",
-  }
-  ]
-  },
-  { 
-    id:9,
-    title: "Legal Steps to Buy or Sell Property in Pune",
-    image:"/blog/2.jpg",
-    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
-    content:[{
-      heading:"Verifying the Property Before Sale",
-      image: "/blog/1.jpg",
-      copy:"Begin by checking the property's title deed, latest 7/12 extract, encumbrance certificate, and approved layout plans. Confirm the seller has full rights and no legal or financial disputes are attached to the property or land.",
-    },
-  {
-    heading:"Drafting the Agreement to Sell",
-    image:"/blog/2.jpg",
-    copy:`The Agreement to Sell captures payment terms, timelines, and handover details. It’s signed
-on stamp paper before registration. Buyers should also collect a no objection certificate
-(NOC) from the society and builder, confirming no dues remain.`,
-  },
-  {
-    heading:"Registration and Stamp Duty",
-    image:"/blog/3.jpg",
-    copy:`The sale deed must be registered with the Pune Sub-Registrar. Stamp duty is around 6%,
-and both parties need to be physically present with valid ID and PAN. Ensure the agreement
-reflects accurate ownership and payment details.`,
-  },
-  {
-    heading:"Post-Sale Handover and Mutation",
-    image:"/blog/4.jpg",
-    copy:"After registration, the buyer must apply for mutation at the Pune Municipal Corporation or revenue office. This updates tax and property records, ensuring all future correspondence and bills are directed to the new owner.",
-  },
-  {
-    heading:"Simplify Every Step with UnBroker",
-    image:"/blog/last.png",
-    copy:"UnBroker is your AI-powered brokerage assistant, helping you understand legal steps, verify documents, and resolve queries instantly. Say goodbye to confusion and hidden risks—UnBroker ensures your property decisions are smart, safe, and seamless.",
-  }
-  ]
-  },
-  { 
-    id:10,
-    title: "Legal Steps to Buy or Sell Property in Mumbai",
-    image:"/blog/3.jpg",
-    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
-    content:[{
-      heading:"Verifying the Property Before Sale",
-      image: "/blog/1.jpg",
-      copy:"Start by verifying the property's title, latest property card, encumbrance certificate, and society share certificate. For flats, ensure the building has an Occupancy Certificate and the seller has paid all municipal and society dues.",
-    },
-  {
-    heading:"Drafting the Agreement to Sell",
-    image:"/blog/2.jpg",
-    copy:`This agreement defines the sale value, payment plan, and timeline. It is executed on stamp
-paper before registration. Buyers must also obtain society NOC and confirm any ongoing
-redevelopment or tenancy issues in the building.`,
-  },
-  {
-    heading:"3. Registration and Stamp Duty",
-    image:"/blog/3.jpg",
-    copy:"Registration is done at the Mumbai Sub-Registrar’s office after paying stamp duty (typically 5%). Both parties must be present with identity proofs. Ensure the sale deed has correct flat details, payment confirmation, and seller disclosures.",
-  },
-  {
-    heading:"Post-Sale Handover and Mutation",
-    image:"/blog/4.jpg",
-    copy:"Post-registration, apply for mutation with BMC or MHADA (if applicable) to transfer property records. Update the society records with the buyer’s name to ensure correct billing and legal recognition in future transactions.",
-  },
-  {
-    heading:"Simplify Every Step with UnBroker",
-    image:"/blog/last.png",
-    copy:"UnBroker uses AI to guide you through legal formalities, verify documents, and answer real estate queries instantly. It’s your digital co-pilot for stress-free, smarter home buying or selling in Mumbai—minus the brokerage chaos.",
-  }
-  ]
-  },
-  { 
-    id:11,
-    title: "Legal Steps to Buy or Sell Property in Dubai",
-    image:"/blog/4.jpg",
-    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
-    content:[{
-      heading:"Verifying the Property Before Sale",
-      image: "/blog/1.jpg",
-      copy:`Buyers must verify the property’s title through the Dubai Land Department (DLD) and
-confirm the seller's ownership. Check if the property is mortgaged and whether all service
-charges to the developer or community are cleared.`,
-    },
-  {
-    heading:"Drafting the Memorandum of Understanding (MoU)",
-    image:"/blog/2.jpg",
-    copy:`The MoU (Form F) outlines sale terms, signed by both parties through RERA-registered
-agents. A 10% deposit is typically paid by the buyer to secure the deal. Ensure all clauses
-are transparent and legally vetted.`,
-  },
-  {
-    heading:"Obtaining the NOC and Transfer",
-    image:"/blog/3.jpg",
-    copy:"The seller must get a No Objection Certificate (NOC) from the developer to proceed with the transfer. The final transaction is completed at the DLD trustee office, where the buyer pays, and the new title deed is issued.",
-  },
-  {
-    heading:"Final Updates and Handover",
-    image:"/blog/4.jpg",
-    copy:"After transfer, utility accounts, service contracts, and community records must be updated in the buyer's name. It’s essential to inspect the property, collect access cards, and ensure all prior dues are fully settled before moving in.",
-  },
-  {
-    heading:"Simplify Every Step with UnBroker",
-    image:"/blog/last.png",
-    copy:`UnBroker helps decode Dubai’s property laws, verifies documents instantly, and ensures
-you’re guided at every step. Whether you're an expat or investor, our AI-driven platform
-empowers smarter, stress-free property decisions—without the hidden costs of traditional
-brokers.`,
-  }
-  ]
-  },
-  { 
-    id:12,
-    title: "Why Are Property Prices Rising in Indian Metro Cities?",
-    image:"/blog8/1.jpg",
-    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
-    content:[{
-      heading:"Post-COVID Real Estate Boom",
-      image: "/blog8/1.jpg",
-      copy:`After two years of slowdown, homebuyers have returned with renewed confidence. Low
-interest rates, increased disposable income, and the emotional need for owned spaces have
-triggered massive demand in major metros, pushing prices to record levels.`,
-    },
-  {
-    heading:"Limited Supply, High Demand",
-    image:"/blog8/2.jpg",
-    copy:`While demand surged, supply has remained restricted. Regulatory delays, land acquisition
-challenges, and slow project launches—especially in urban hubs like Delhi NCR—have
-created a gap, inflating prices across premium and mid-segment housing.`,
-  },
-  {
-    heading:"Infrastructure Push in Delhi NCR",
-    image:"/blog8/3.jpg",
-    copy:"Delhi NCR has seen large-scale infrastructure investments—like the Delhi-Mumbai Expressway, Dwarka Expressway, and Noida Airport—making surrounding areas more attractive for end users and investors. This has fueled rapid price hikes in micro-markets like Gurugram, Noida, and Ghaziabad.",
-  },
-  {
-    heading:"Shift Towards Branded Developers",
-    image:"/blog8/4.jpg",
-    copy:"With rising buyer awareness, demand has shifted to branded and RERA-compliant developers who offer timely delivery and better quality. This has concentrated demand in fewer, more credible projects—driving up prices in those communities.",
-  },
-  {
-    heading:"Rise of NRI and Investor Activity",
-    image:"/blog8/5.jpg",
-    copy:`With a weak rupee and growing confidence in Indian real estate, NRIs and institutional
-investors are re-entering the market aggressively. Delhi NCR, due to its connectivity and
-commercial relevance, has become a top choice, contributing to the surge.`,
-  },
-  {
-    heading:"Make Informed Decisions with UnBroker",
-    image:"/blog8/abc.png",
-    copy:`Rising prices make every decision count. UnBroker helps you analyze real-time trends,
-identify high-potential micro-markets, and verify project authenticity—all powered by AI.
-
-Whether you’re a first-time buyer or a seasoned investor, UnBroker empowers smarter,
-data-backed property decisions.`,
-  }
-  ]
-  },
+  
 ];
 
 export default blogs;

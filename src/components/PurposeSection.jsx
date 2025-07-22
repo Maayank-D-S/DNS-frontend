@@ -46,7 +46,8 @@ export default function PurposeSection() {
 
         <motion.p custom={2} variants={textVariants}
           className="text-gray-700 text-xs leading-relaxed">
-          D&S is committed to removing inefficiencies and manipulation from the property space while promoting data transparency, inclusivity, and smarter living experiences
+          D&S is committed to removing inefficiencies and manipulation from property buying and
+          developing experience while promoting data transparency, inclusivity, and smarter living.
         </motion.p>
       </motion.div>
 

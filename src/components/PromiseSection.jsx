@@ -68,7 +68,8 @@ export default function PromiseSection() {
 
         <motion.p custom={2} variants={textVariants}
           className="text-gray-700 text-lg mb-6">
-          At D&S, we imagine a future where buying and building real estate is seamless, unbiased, and intelligent.
+          At D&S, we imagine a future where buying and building real estate is seamless, unbiased,
+          and transparent.
         </motion.p>
 
         {/* Navigate with React Router instead of anchor */}

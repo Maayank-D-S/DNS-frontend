@@ -5,21 +5,21 @@ const properties = [
   {
     name: "CSite",
     location:
-      "A new-age building experience designed with technology at its core.",
+      "A new-age building experience for managing your construction sites digitally.",
     image: "/csitel.png",
   },
   {
     name: "UnBroker",
     location:
-      "Book site visits, interact digitally, and find verified listings—powered by AI.",
+      "Discover your true home, interact digitally and findverified listings—powered by AI.",
     image: "/ub.png",
   },
-  {
-    name: "Civil consultancy Services",
-    location:
-      "A modern civil planning suite that offers complete structural layout, urban utility mapping and other services backed by real-time geospatial data.",
-    image: "/DCCS.png",
-  },
+  // {
+  //   name: "Civil consultancy Services",
+  //   location:
+  //     "A modern civil planning suite that offers complete structural layout, urban utility mapping and other services backed by real-time geospatial data.",
+  //   image: "/DCCS.png",
+  // },
 ];
 
 /* slide-up animation for each card */

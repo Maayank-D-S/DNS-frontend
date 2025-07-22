@@ -85,11 +85,18 @@ function StoryRow({ img, heading, copy, reverse }) {
 
 /* main section ------------------------------------------------------ */
 export default function OurStory() {
-  const copy1 = `Most real estate headaches are rooted in miscommunication and opacity. At D&S, we build processes and platforms that engineer trust — through visible data, verified listings, and clear accountability. Trust isn’t a feature; it’s the foundation.`;
-  const copy2 = `We don’t just consult. We co-create infrastructure that adapts, scales, and sustains. From zoning logic to urban layouts, everything we design is modular, meaningful, and made to solve real-world bottlenecks.`;
-  const copy3 = `Whether it’s a 20-acre plot or a mobile interface — we design with intent. Every decision goes through the same filter: is it simple, is it scalable, is it honest?`;
-  const copy4 = `We replace friction with flow. From UnBroker’s AI-guided bookings to Csite’s drag-drop masterplanning, we’re building tools that work like modern software — not 1990s paperwork.`;
-  const copy5 = `Sustainability isn't a pitch word. It’s a protocol we write into layouts, audits, and materials — ensuring the structures we touch leave fewer regrets behind.`;
+  const copy1 = `Most real estate headaches are rooted in miscommunication and opacity. At D&S, we build
+processes and platforms that engineer trust — through visible data, verified listings and clear
+accountability. Trust isn’t a feature, it’s the foundation.`;
+  const copy2 = `We don’t just consult. We co-create infrastructure that adapts, scales, and sustains. From
+zoning logic to urban layouts, everything we design is modular, meaningful, and made to
+solve real-world execution challenges.`;
+  const copy3 = `Whether it’s a residential or commercial — we design with intent. Every decision goes
+through the same filter: is it simple, is it scalable, is it honest?`;
+  const copy4 = `We replace friction with flow. From UnBroker’s AI-guided bookings to Csite’s drag-drop
+masterplanning, we’re building tools that work like modern software — not 1990s paperwork.`;
+  const copy5 = `Sustainability isn't a pitch word. It’s a protocol we enrich into our systems ensuring spaces
+we touch leave fewer regrets behind.`;
 
   return (
     <section className="bg-white py-20 px-4">
@@ -100,7 +107,7 @@ export default function OurStory() {
             Our Mission
           </p>
           <h2 className="text-2xl md:text-3xl font-serif text-gray-800 mt-1">
-            No chaos. No middlemen. Just clear value for Indian Real Estate.
+          No chaos. No middlemen. Truly transparent Real Estate.
           </h2>
         </div>
 

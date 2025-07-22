@@ -15,9 +15,9 @@ const VideoBackground = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* Overlayed text */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <h1 className="text-white text-5xl md:text-7xl font-bold drop-shadow-lg font-rajdhani">
+      {/* Overlayed text in bottom-right */}
+      <div className="absolute inset-0 flex items-end justify-end p-6 md:p-12 pointer-events-none">
+        <h1 className="text-white text-4xl sm:text-4xl md:text-6xl lg:text-7xl drop-shadow-lg font-rajdhani text-right">
           Life at it&#39;s Best
         </h1>
       </div>

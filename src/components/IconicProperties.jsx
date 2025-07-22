@@ -6,7 +6,7 @@ const properties = [
     name: "CSite",
     location:
       "A new-age building experience designed with technology at its core.",
-    image: "/csite.png",
+    image: "/csitel.png",
   },
   {
     name: "UnBroker",

@@ -114,7 +114,7 @@ export default function OurStory() {
         <div className="my-12" />
 
         <StoryRow
-          img="/s3.jpg"
+          img="/new-1.jpg"
           heading="Building smarter, not harder"
           copy={copy2}
           reverse={true}
@@ -130,7 +130,7 @@ export default function OurStory() {
         <div className="my-12" />
 
         <StoryRow
-          img="/s1.jpg"
+          img="/new.jpg"
           heading="Making real estate truly digital-first"
           copy={copy4}
           reverse={true}
@@ -138,7 +138,7 @@ export default function OurStory() {
         <div className="my-12" />
 
         <StoryRow
-          img="/t2.jpg"
+          img="/new-2.jpg"
           heading="Building for a future that outlives us"
           copy={copy5}
           reverse={false}

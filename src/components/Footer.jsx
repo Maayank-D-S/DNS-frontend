@@ -6,13 +6,13 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <footer className="bg-[#fefae0] text-black text-sm">
+    <footer className="bg-[#161717] text-black text-sm">
       <div className="container mx-auto px-6 py-14">
-        <div className="flex flex-col md:flex-row justify-between items-start gap-10">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-10 text-white">
           {/* Left: Link Groups */}
           <div className="flex flex-wrap gap-16">
             <ul className="space-y-2">
-              <li className="hover:underline cursor-pointer">
+              <li className="hover:underline cursor-pointer ">
                 <Link to="/">Home</Link>
               </li>
               <li className="hover:underline cursor-pointer">
@@ -64,7 +64,7 @@ const Footer = () => {
         <hr className="my-8 border-gray-300" />
 
         {/* Copyright */}
-        <p className="text-center text-xs text-gray-600">
+        <p className="text-center text-xs text-white">
           &copy; Dobliyal & Shah International Pvt Ltd 2025 All Rights Reserved
         </p>
       </div>

@@ -3,7 +3,7 @@ const blogs = [
     id:8,
     title: "Legal Steps to Buy or Sell Property in Noida",
     image:"/blog/1.jpg",
-    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
+    heading:"Buying or selling property in Noida? This guide breaks down the legal steps—title checks, sale agreements, stamp duty, registration, and mutation. Ensure a smooth, risk-free transaction by verifying documents, settling dues, and updating ownership with authorities. A must-read for anyone navigating Noida’s real estate market.",
     content:[{
       heading:"Verifying the Property Before Sale",
       image: "/blog6/1.png",
@@ -37,7 +37,7 @@ society to confirm there are no outstanding payments.`,
     id:9,
     title: "Legal Steps to Buy or Sell Property in Pune",
     image:"/blog/2.jpg",
-    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
+    heading:"Planning to buy or sell property in Pune? This guide walks you through all legal steps—from verifying title documents and drafting the sale agreement to registering the deed and updating municipal records. Avoid legal issues and ensure a seamless transfer by following these essential steps for a secure transaction.",
     content:[{
       heading:"Verifying the Property Before Sale",
       image: "/blog/1.jpg",
@@ -73,7 +73,7 @@ reflects accurate ownership and payment details.`,
     id:10,
     title: "Legal Steps to Buy or Sell Property in Mumbai",
     image:"/blog/3.jpg",
-    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
+    heading:"Navigating a property transaction in Mumbai? This guide covers all key legal steps—title verification, drafting a sale agreement, registration, stamp duty, and post-sale mutation. Learn how to avoid risks, ensure due diligence, and secure a smooth transfer of ownership in one of India’s most dynamic real estate markets.",
     content:[{
       heading:"Verifying the Property Before Sale",
       image: "/blog/1.jpg",
@@ -107,7 +107,7 @@ redevelopment or tenancy issues in the building.`,
     id:11,
     title: "Legal Steps to Buy or Sell Property in Dubai",
     image:"/blog/4.jpg",
-    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
+    heading:"Buying or selling property in Dubai? This guide simplifies the legal process—title checks via DLD, MoU signing, obtaining a developer NOC, and completing transfer at the trustee office. Learn how to ensure a secure, compliant transaction and seamless handover in one of the world’s most regulated real estate markets.",
     content:[{
       heading:"Verifying the Property Before Sale",
       image: "/blog/1.jpg",
@@ -146,7 +146,7 @@ brokers.`,
     id:12,
     title: "Why Are Property Prices Rising in Indian Metro Cities?",
     image:"/blog8/1.jpg",
-    heading:"We offer end-to-end Project Management Consultancy (PMC) services for construction projects—ensuring timely, cost-effective, and quality-controlled execution across all stages.",
+    heading:"Property prices in Indian metros are surging due to post-COVID demand, limited new supply, and infrastructure growth—especially in Delhi NCR. A shift toward branded developers and a spike in NRI and investor interest are further intensifying the market. This blog decodes the forces behind the real estate upswing.",
     content:[{
       heading:"Post-COVID Real Estate Boom",
       image: "/blog8/1.jpg",
@@ -228,7 +228,7 @@ data-backed property decisions.`,
   },
   {
     heading:"Our service scope includes:",
-    image:"/abc.jpg",
+    image:"/abc.png",
     copy:"Site and location evaluation, Regulatory and development constraint mapping, Preliminary cost-benefit analysis, Infrastructure and utility availability review, Environmental and risk considerations, Market research (demand–supply, pricing, trends), Feasibility reports for internal or official use",
   }
   ]
@@ -264,7 +264,7 @@ soil stabilization or compaction grouting to enhance bearing capacity.
   },
   {
     heading:"Our service scope includes:",
-    image:"/abc.jpg",
+    image:"/abc.png",
     copy:"Geotechnical site investigation and soil profiling, Soil bearing capacity and settlement analysis, Slope stability analysis and mitigation design, Foundation recommendations (shallow, deep), Ground improvement solutions (geosynthetics, soil nailing, compaction, etc.), Retaining wall and embankment design, Support during construction and on-site problem resolution",
   }
   ]
@@ -297,7 +297,7 @@ green building rating systems such as LEED or local equivalents.`,
   },
   {
     heading:"Our service scope includes:",
-    image:"/abc.jpg",
+    image:"/abc.png",
     copy:"Energy-efficient MEP design integration, HVAC and lighting efficiency planning, Energy modeling and performance simulations, Water use reduction strategy (fixtures, reuse, etc.), Green building certification support (IGBC, GRIHA, LEED), Documentation and compliance reports, Authority coordination and submission assistance",
   }
   ]
@@ -335,7 +335,7 @@ services designs that are energy-efficient, code-compliant, and easy to maintain
   },
   {
     heading:"Our service scope includes:",
-    image:"/abc.jpg",
+    image:"/abc.png",
     copy:"HVAC system design (ventilation, cooling load, ducting), Electrical design (power distribution, lighting layouts, earthing, etc.), Plumbing and drainage systems, Firefighting system design (hydrants, sprinkler layouts, tanks, pumps), Compliance with IS codes, NBC, and local authority norms, MEP coordination with architectural and structural layouts, Site support and design review during execution",
   },
   
@@ -372,7 +372,7 @@ delivery.`,
   },
   {
     heading:"Our service scope includes:",
-    image:"/abc.jpg",
+    image:"/abc.png",
     copy:"End-to-end project planning and scheduling, Quality assurance and safety compliance,Tendering support and vendor management, Site supervision and execution monitoring, Cost tracking and progress-based billing checks, Documentation and stakeholder reporting, Digital delivery enabled through CSite",
   }
   ]

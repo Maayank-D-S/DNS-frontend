@@ -112,19 +112,21 @@ const EnquiryModal = ({ isOpen, onClose }) => {
             className="w-full border-b border-gray-300 outline-none py-2"
           />
 
-          <label className="flex items-start text-sm text-gray-600 gap-2">
-            <input
-              type="checkbox"
-              checked={agree}
-              onChange={(e) => setAgree(e.target.checked)}
-              className="mt-1"
-            />
-            By checking this box, you agree to our{" "}
-            <a href="#" className="text-yellow-700 underline">
-              Privacy Policy
-            </a>{" "}
-            and consent to be contacted with relevant updates.
-          </label>
+<label className="flex items-start gap-2 text-sm text-gray-600">
+  <input
+    type="checkbox"
+    checked={agree}
+    onChange={e => setAgree(e.target.checked)}
+    className="mt-1"
+  />
+  <span className="leading-relaxed">
+    By checking this box, you agree to our{" "}
+    <a href="#" className="text-yellow-700 underline">
+      Privacy Policy
+    </a>{" "}
+    and consent to be contacted with relevant updates.
+  </span>
+</label>
 
           <button
             type="submit"

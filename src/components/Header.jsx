@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Menu, X, Search, ChevronDown } from "lucide-react";
+import { useLocation } from "react-router-dom";
+
+import { Menu, X, Search, ChevronDown, ChevronLeft } from "lucide-react";
 import EnquiryModal from "./EnquireModal";
 
 const Header = () => {
@@ -13,9 +15,10 @@ const Header = () => {
   const [showCSite, setShowCSite] = useState(false);
   const [showUnBroker, setShowUnBroker] = useState(false);
   const [showCivil, setShowCivil] = useState(false);
-
+ 
   const lastScrollY = useRef(0);
   const navigate = useNavigate();
+  const location = useLocation();
   const handleMenu = () => {
     if (mobileMenuOpen) {
       setMobileMenuOpen(false);
@@ -36,13 +39,10 @@ const Header = () => {
 
   // Close menus on route change
   useEffect(() => {
-    const unlisten = navigate(() => {
-      setShowProjects(false);
-      setShowSearch(false);
-      setMobileMenuOpen(false);
-    });
-    return unlisten;
-  }, [navigate]);
+    setShowProjects(false);
+    setShowSearch(false);
+    setMobileMenuOpen(false);
+  }, [location]);
 
   return (
     <>
@@ -53,13 +53,24 @@ const Header = () => {
                     transition-transform duration-500
                     ${showHeader ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <a href="/">
-          <img
-            src="/logo.svg" // update path accordingly
-            alt="LODHA Logo"
-            className="h-16 w-auto object-contain"
-          />
-        </a>
+        <div className="flex items-center">
+    {/* ← Back button */}
+    <button
+      onClick={() => navigate(-1)}
+      className="mr-4 text-white hover:text-yellow-400 focus:outline-none"
+    >
+      <ChevronLeft className="w-6 h-6" />
+    </button>
+
+    {/* Your Logo */}
+    <a href="/">
+      <img
+        src="/logo.svg"
+        alt="LODHA Logo"
+        className="h-16 w-auto object-contain"
+      />
+    </a>
+  </div>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex gap-6 text-sm font-light">
@@ -116,7 +127,8 @@ const Header = () => {
         {/* <div className="h-16" /> */}
 
         {/* ── SCROLLABLE LINKS AREA ─────────────────────── */}
-        <div className="
+        <div
+          className="
     absolute 
     top-16    
     bottom-24 
@@ -125,7 +137,8 @@ const Header = () => {
     pb-28    
     divide-y divide-white/20 
     px-4
-  ">
+  "
+        >
           {/* About Us */}
           <Link
             to="/story"
@@ -192,7 +205,7 @@ const Header = () => {
                     UnBroker
                     <ChevronDown
                       className={`w-3 h-3 transition-transform
-                           ${showUnBroker ? "rotate-180" : "rotate-0"}`}
+                          ${showUnBroker ? "rotate-180" : "rotate-0"}`}
                     />
                   </button>
                   {showUnBroker && (

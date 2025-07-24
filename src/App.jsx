@@ -21,6 +21,7 @@ function App() {
         <Route path="/blog/:id" element={<BlogContent/>} />
         <Route path="/contact" element={<ContactPage/>}/>
         <Route path="/csite" element={<CSitePage/>}/>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );

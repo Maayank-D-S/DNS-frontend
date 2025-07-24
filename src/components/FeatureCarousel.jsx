@@ -3,35 +3,36 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function FeatureCarousel() {
-  // ── Replace these with your real image URLs ──
-  const slides = ['/p1.png', '/p2.png', '/ub.png', '/ub.png', '/ub.png'];
+  const slides = ['/p1.png','/p2.png','/ub.png','/ub.png','/ub.png'];
+
+  // constants for slide width + gap
+  const SLIDE_W = 80;   // vw
+  const GAP_H = 15;     // vh
 
   const [current, setCurrent] = useState(0);
   const timer = useRef(null);
-  const INTERVAL = 5000; // 5s
+  const INTERVAL = 5000;
 
   // auto‑advance
   useEffect(() => {
     clearTimeout(timer.current);
     timer.current = setTimeout(
-      () => setCurrent((c) => (c + 1) % slides.length),
+      () => setCurrent(c => (c + 1) % slides.length),
       INTERVAL
     );
     return () => clearTimeout(timer.current);
   }, [current, slides.length]);
 
-  const prev = () =>
-    setCurrent((c) => (c === 0 ? slides.length - 1 : c - 1));
-  const next = () =>
-    setCurrent((c) => (c + 1) % slides.length);
+  const prev = () => setCurrent(c => (c === 0 ? slides.length - 1 : c - 1));
+  const next = () => setCurrent(c => (c + 1) % slides.length);
 
-  // for calc in translateX
-  const offsetW = current * 80;  // 80vw per slide
-  const offsetH = current * 10;  // 10vh gap per slide
+  // compute total offset
+  const offsetW = current * SLIDE_W;   // vw
+  const offsetH = current * GAP_H;     // vh
 
   return (
-    <section className="bg-black py-16 overflow-x-hidden relative">
-      {/* ─── Header / Intro Text ─────────────────────────── */}
+    <section className="bg-black py-16 overflow-x-hidden">
+      {/* header / intro */}
       <div className="max-w-3xl mx-auto text-center mb-12 px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
           The All‑In‑One Construction OS
@@ -41,25 +42,22 @@ export default function FeatureCarousel() {
         </p>
       </div>
 
-      {/* full viewport width, with 10vw padding each side to peek */}
+      {/* carousel */}
       <div className="relative w-screen px-[10vw] overflow-hidden">
-      
-
-        {/* ─── TRACK ─────────────────────────────────────────────── */}
         <div
           className="flex transition-transform duration-700 ease-out"
           style={{
             transform: `translateX(calc(-${offsetW}vw - ${offsetH}vh))`
           }}
         >
-          {slides.map((src, i) => (
+          {slides.map((src,i) => (
             <div
               key={i}
               className="flex-shrink-0"
               style={{
                 width: '80vw',
                 height: '80vh',
-                marginRight: '15vh',            // horizontal gap
+                marginRight: `${GAP_H}vh`,
                 boxShadow: '0 0 40px rgba(255,255,255,0.6)',
                 borderRadius: '1rem',
                 overflow: 'hidden'
@@ -67,17 +65,14 @@ export default function FeatureCarousel() {
             >
               <img
                 src={src}
-                alt={`slide ${i + 1}`}
+                alt={`slide ${i+1}`}
                 className="w-full h-full object-cover"
               />
             </div>
           ))}
         </div>
 
-        {/* decorative guide‑line on the right */}
-        
-
-        {/* ─── PREV/NEXT BUTTONS ───────────────────────────────── */}
+        {/* arrows */}
         <button
           onClick={prev}
           className="absolute top-1/2 left-2 p-2 bg-black/50 rounded-full -translate-y-1/2 hover:bg-black/70 transition"
@@ -91,14 +86,15 @@ export default function FeatureCarousel() {
           <ChevronRight className="w-6 h-6 text-white" />
         </button>
 
-        {/* ─── PAGINATION DOTS ──────────────────────────────────── */}
+        {/* pagination dots */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-          {slides.map((_, i) => (
+          {slides.map((_,i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}
-              className={`w-3 h-3 rounded-full transition
-                ${i === current ? 'bg-white' : 'bg-white/50 hover:bg-white'}`}
+              className={`w-3 h-3 rounded-full transition ${
+                i === current ? 'bg-white' : 'bg-white/50 hover:bg-white'
+              }`}
             />
           ))}
         </div>

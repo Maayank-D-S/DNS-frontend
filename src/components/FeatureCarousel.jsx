@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function FeatureCarousel() {
-  const slides = ['/p1.png','/p2.png','/ub.png','/ub.png','/ub.png'];
+  const slides = ['/c15.png','/c11.png','/c12.png','/c13.png','/c14.png',];
 
   // constants for slide width + gap
   const SLIDE_W = 80;   // vw

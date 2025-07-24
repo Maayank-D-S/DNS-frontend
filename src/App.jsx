@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import StoryPage from "./pages/StoryPage"; // Make sure this file exists
 import ImpactPage from "./pages/ImpactPage";
+import NotFound from "./pages/NotFound";
 
 
 

@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function FeatureCarousel() {
   // ── Replace these with your real image URLs ──
-  const slides = ['/p1.png', '/p2.png', '/ub.png'];
+  const slides = ['/p1.png', '/p2.png', '/ub.png', '/ub.png', '/ub.png'];
 
   const [current, setCurrent] = useState(0);
   const timer = useRef(null);
@@ -25,19 +25,30 @@ export default function FeatureCarousel() {
   const next = () =>
     setCurrent((c) => (c + 1) % slides.length);
 
-  // we'll need these for the calc in translateX
+  // for calc in translateX
   const offsetW = current * 80;  // 80vw per slide
   const offsetH = current * 10;  // 10vh gap per slide
 
   return (
-    <div className="bg-black py-16 overflow-x-hidden">
+    <section className="bg-black py-16 overflow-x-hidden relative">
+      {/* ─── Header / Intro Text ─────────────────────────── */}
+      <div className="max-w-3xl mx-auto text-center mb-12 px-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          The All‑In‑One Construction OS
+        </h2>
+        <p className="text-lg md:text-xl text-white/80">
+          All your site workflows, streamlined and synced
+        </p>
+      </div>
+
       {/* full viewport width, with 10vw padding each side to peek */}
       <div className="relative w-screen px-[10vw] overflow-hidden">
-        {/* ─── TRACK ────────────────────────────────────── */}
+      
+
+        {/* ─── TRACK ─────────────────────────────────────────────── */}
         <div
           className="flex transition-transform duration-700 ease-out"
           style={{
-            // slide by 80vw + 10vh per card
             transform: `translateX(calc(-${offsetW}vw - ${offsetH}vh))`
           }}
         >
@@ -48,7 +59,7 @@ export default function FeatureCarousel() {
               style={{
                 width: '80vw',
                 height: '80vh',
-                marginRight: '10vh',            // horizontal gap
+                marginRight: '15vh',            // horizontal gap
                 boxShadow: '0 0 40px rgba(255,255,255,0.6)',
                 borderRadius: '1rem',
                 overflow: 'hidden'
@@ -63,7 +74,10 @@ export default function FeatureCarousel() {
           ))}
         </div>
 
-        {/* ─── PREV/NEXT BUTTONS ───────────────────────── */}
+        {/* decorative guide‑line on the right */}
+        
+
+        {/* ─── PREV/NEXT BUTTONS ───────────────────────────────── */}
         <button
           onClick={prev}
           className="absolute top-1/2 left-2 p-2 bg-black/50 rounded-full -translate-y-1/2 hover:bg-black/70 transition"
@@ -77,7 +91,7 @@ export default function FeatureCarousel() {
           <ChevronRight className="w-6 h-6 text-white" />
         </button>
 
-        {/* ─── PAGINATION DOTS ─────────────────────────── */}
+        {/* ─── PAGINATION DOTS ──────────────────────────────────── */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
           {slides.map((_, i) => (
             <button
@@ -89,6 +103,6 @@ export default function FeatureCarousel() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import CsiteHero from "../components/CsiteHero";
 import { useEffect } from "react";
 import WhyChooseUs from "../components/WhyChooseUs";
+import CsiteHeader from "../components/CsiteHeader";
 
 export default function CSitePage() {
   useEffect(() => {
@@ -15,6 +16,7 @@ export default function CSitePage() {
       }, []);
   return(
     <div className="bg-black">
+    <CsiteHeader/>
     <CsiteHero/>
     <FeatureCarousel/>
     <HeroWithScrollIndicator/>

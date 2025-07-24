@@ -1,7 +1,7 @@
 // src/components/Header.jsx
 import React from 'react';
-import Link from 'next/link'; // or 'react-router-dom'
-import { CsiteLogo } from '@/components/icons';
+import {Link} from 'react-router-dom'; // or 'react-router-dom'
+
 
 export default function CsiteHeader() {
   return (
@@ -12,26 +12,13 @@ export default function CsiteHeader() {
       bg-transparent   /* make it transparent */
     ">
       {/* left: logo + text */}
-      <Link href="/" className="flex items-center gap-3">
-        <CsiteLogo className="w-10 h-10 text-yellow-400" />
+      <Link to="/" className="flex items-center gap-3">
+        <img src="/csiteLogo.png" alt="csite" className="h-8 w-auto md:h-10 lg:h-12" />
         <span className="text-2xl font-bold text-white">CSite</span>
       </Link>
 
       {/* right: nav + login (desktop) */}
-      <nav className="hidden md:flex items-center gap-8">
-        <Link href="/" className="text-white hover:text-yellow-400 transition">
-          Home
-        </Link>
-        <Link href="/explore" className="text-white hover:text-yellow-400 transition">
-          Explore
-        </Link>
-        <Link
-          href="/login"
-          className="bg-yellow-400 text-black font-medium px-4 py-2 rounded-lg hover:bg-yellow-500 transition"
-        >
-          Login
-        </Link>
-      </nav>
+      
 
       {/* mobile menu button */}
       <button className="md:hidden text-white focus:outline-none">

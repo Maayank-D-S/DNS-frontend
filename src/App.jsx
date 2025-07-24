@@ -10,6 +10,7 @@ import BlogGrid from "./pages/BlogPage";
 import BlogContent from "./pages/BlogContent";
 import { ContactPage } from "./pages/ContactPage";
 import CSitePage from "./pages/CsitePage";
+import UbPage from "./pages/UbPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/blog/:id" element={<BlogContent/>} />
         <Route path="/contact" element={<ContactPage/>}/>
         <Route path="/csite" element={<CSitePage/>}/>
+        <Route path="/unbroker" element={<UbPage/>}/>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

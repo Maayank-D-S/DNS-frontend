@@ -9,6 +9,7 @@ import CsiteHero from "../components/CsiteHero";
 import { useEffect } from "react";
 import WhyChooseUs from "../components/WhyChooseUs";
 import CsiteHeader from "../components/CsiteHeader";
+import Footer from "../components/Footer";
 
 export default function CSitePage() {
   useEffect(() => {
@@ -22,7 +23,7 @@ export default function CSitePage() {
     <HeroWithScrollIndicator/>
     <PhoneFeatureSection/>
     {/* <ConnectedRoles/> */}
-    <WhyChooseUs/>
+    <Footer/>
     </div>
   );
 }

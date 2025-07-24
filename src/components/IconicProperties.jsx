@@ -1,28 +1,24 @@
-import { useState } from "react";
+// src/components/IconicProperties.jsx
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const properties = [
+const products = [
   {
+    slug: "csite",
     name: "CSite",
-    location:
+    description:
       "A new-age building experience for managing your construction sites digitally.",
     image: "/csitel.png",
   },
   {
+    slug: "unbroker",
     name: "UnBroker",
-    location:
-      "Discover your true home, interact digitally and findverified listings—powered by AI.",
+    description:
+      "Discover your true home, interact digitally and find verified listings—powered by AI.",
     image: "/ub.png",
   },
-  // {
-  //   name: "Civil consultancy Services",
-  //   location:
-  //     "A modern civil planning suite that offers complete structural layout, urban utility mapping and other services backed by real-time geospatial data.",
-  //   image: "/DCCS.png",
-  // },
 ];
 
-/* slide-up animation for each card */
 const cardVariants = {
   hidden: { y: 35, opacity: 0 },
   show: {
@@ -34,7 +30,7 @@ const cardVariants = {
 
 export default function IconicProperties() {
   return (
-    <section className="py-16 px-6 md:px-16 bg-white">
+    <section id="products" className="py-16 px-6 md:px-16 bg-white">
       <p className="text-xs tracking-widest text-yellow-600 text-center mb-1">
         OUR PRODUCTS
       </p>
@@ -42,11 +38,10 @@ export default function IconicProperties() {
         WHAT WE OFFER
       </h2>
 
-      {/* Cards Layout */}
       <div className="flex flex-col md:flex-row gap-6 items-center md:items-stretch justify-center">
-        {properties.map((p, i) => (
-          <div key={p.name} className="w-full md:w-1/3 max-w-md">
-            <Card {...p} delay={i * 0.06} />
+        {products.map((p, i) => (
+          <div key={p.slug} className="w-full md:w-1/3 max-w-md">
+            <Card product={p} delay={i * 0.06} />
           </div>
         ))}
       </div>
@@ -54,35 +49,38 @@ export default function IconicProperties() {
   );
 }
 
-/* ─── Card ───────────────────────────────────────────────────────── */
-function Card({ image, name, location, delay }) {
-  return (
-    <motion.div
-      variants={cardVariants}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ amount: 0.35 }}
-      transition={{ delay }}
-      className="w-full h-full bg-white rounded-md 
-                overflow-hidden shadow hover:shadow-lg transition
-                flex flex-col min-h-[300px]"
-    >
-      {/* Image */}
-      <div className="h-48 md:h-56 flex-shrink-0 overflow-hidden">
-        <img
-          src={image}
-          alt={name}
-          className="w-full h-full object-cover pointer-events-none"
-        />
-      </div>
+function Card({ product, delay }) {
+  const { slug, name, description, image } = product;
 
-      {/* Content */}
-      <div className="p-4 flex flex-col flex-grow justify-between">
-        <div>
-          <h3 className="text-lg md:text-xl font-medium">{name}</h3>
-          <p className="text-gray-500 text-sm mt-2">{location}</p>
+  return (
+    <Link to={`/${slug}`} className="block">
+      <motion.div
+        variants={cardVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ amount: 0.35 }}
+        transition={{ delay }}
+        className="w-full h-full bg-white rounded-md 
+                   overflow-hidden shadow hover:shadow-lg transition
+                   flex flex-col min-h-[300px]"
+      >
+        {/* Image */}
+        <div className="h-48 md:h-56 flex-shrink-0 overflow-hidden">
+          <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover pointer-events-none"
+          />
         </div>
-      </div>
-    </motion.div>
+
+        {/* Content */}
+        <div className="p-4 flex flex-col flex-grow justify-between">
+          <div>
+            <h3 className="text-lg md:text-xl font-medium">{name}</h3>
+            <p className="text-gray-500 text-sm mt-2">{description}</p>
+          </div>
+        </div>
+      </motion.div>
+    </Link>
   );
 }

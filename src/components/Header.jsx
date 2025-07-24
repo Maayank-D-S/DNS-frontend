@@ -15,7 +15,7 @@ const Header = () => {
   const [showCSite, setShowCSite] = useState(false);
   const [showUnBroker, setShowUnBroker] = useState(false);
   const [showCivil, setShowCivil] = useState(false);
- 
+
   const lastScrollY = useRef(0);
   const navigate = useNavigate();
   const location = useLocation();
@@ -54,23 +54,23 @@ const Header = () => {
                     ${showHeader ? "translate-y-0" : "-translate-y-full"}`}
       >
         <div className="flex items-center">
-    {/* ← Back button */}
-    <button
-      onClick={() => navigate(-1)}
-      className="mr-4 text-white hover:text-yellow-400 focus:outline-none"
-    >
-      <ChevronLeft className="w-6 h-6" />
-    </button>
+          {/* ← Back button */}
+          <button
+            onClick={() => navigate(-1)}
+            className="mr-4 text-white hover:text-yellow-400 focus:outline-none"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
 
-    {/* Your Logo */}
-    <a href="/">
-      <img
-        src="/logo.svg"
-        alt="LODHA Logo"
-        className="h-16 w-auto object-contain"
-      />
-    </a>
-  </div>
+          {/* Your Logo */}
+          <a href="/">
+            <img
+              src="/logo.svg"
+              alt="LODHA Logo"
+              className="h-16 w-auto object-contain"
+            />
+          </a>
+        </div>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex gap-6 text-sm font-light">
@@ -191,6 +191,13 @@ const Header = () => {
                       <li>Project Planning</li>
                       <li>Scheduling</li>
                       <li>Execution tracking</li>
+                      <li>Building Information Modeling (BIM)</li>
+                      <li>Feasibility Research</li>
+                      <li>Geotechnical Engineering</li>
+                      <li>Energy Efficiency Design</li>
+                      <li>MEP Design</li>
+                      <li>Project Management</li>
+                      <li>Structural Design</li>
                     </ul>
                   )}
                 </div>
@@ -217,30 +224,6 @@ const Header = () => {
                 </div>
 
                 {/* Civil Consultancy Services */}
-                <div>
-                  <button
-                    type="button"
-                    onClick={() => setShowCivil((v) => !v)}
-                    className="w-full flex justify-between items-center hover:text-yellow-400 transition"
-                  >
-                    Civil Consultancy Services
-                    <ChevronDown
-                      className={`w-3 h-3 transition-transform
-                           ${showCivil ? "rotate-180" : "rotate-0"}`}
-                    />
-                  </button>
-                  {showCivil && (
-                    <ul className="mt-2 pl-4 space-y-1 text-sm text-white/80">
-                      <li>Building Information Modeling (BIM)</li>
-                      <li>Feasibility Research</li>
-                      <li>Geotechnical Engineering</li>
-                      <li>Energy Efficiency Design</li>
-                      <li>MEP Design</li>
-                      <li>Project Management</li>
-                      <li>Structural Design</li>
-                    </ul>
-                  )}
-                </div>
               </div>
             )}
           </div>
@@ -310,6 +293,37 @@ const Header = () => {
                 <li>
                   <span className="block font-medium">Execution tracking</span>
                 </li>
+                <li>
+                  <span className="block font-medium">
+                    Building Information Modeling (BIM)
+                  </span>
+                </li>
+                <li>
+                  <span className="block font-medium">
+                    Feasibility research
+                  </span>
+                </li>
+                <li>
+                  <span className="block font-medium">
+                    Geotechnical engineering
+                  </span>
+                </li>
+                <li>
+                  <span className="block font-medium">
+                    Green Building & Energy Efficiency Design
+                  </span>
+                </li>
+                <li>
+                  <span className="block font-medium">MEP Design</span>
+                </li>
+                <li>
+                  <span className="block font-medium">
+                    Project Management Consultancy
+                  </span>
+                </li>
+                <li>
+                  <span className="block font-medium">Structural design</span>
+                </li>
               </ul>
             </div>
 
@@ -329,20 +343,6 @@ const Header = () => {
             </div>
 
             {/* Column 3: Civil Consultancy Services */}
-            <div>
-              <h3 className="font-bold text-lg mb-4">
-                Civil Consultancy Services
-              </h3>
-              <ul className="space-y-2 text-white/90">
-                <li>Building Information Modeling (BIM)</li>
-                <li>Feasibility research</li>
-                <li>Geotechnical engineering</li>
-                <li>Green Building & Energy Efficiency Design</li>
-                <li>MEP Design</li>
-                <li>Project Management Consultancy</li>
-                <li>Structural design</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>

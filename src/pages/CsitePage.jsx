@@ -1,0 +1,24 @@
+// src/pages/CSitePage.jsx
+import React from "react";
+import FeatureCarousel from "../components/FeatureCarousel";
+import HeroWithScrollIndicator from "../components/HeroWithScrollIndicator";
+import PhoneFeatureSection from "../components/PhoneFeatureSection";
+import ConnectedRoles from "../components/ConnectedRoles";
+import { motion } from 'framer-motion';
+import CsiteHero from "../components/CsiteHero";
+import { useEffect } from "react";
+
+export default function CSitePage() {
+  useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+  return(
+    <div className="bg-black">
+    <CsiteHero/>
+    <FeatureCarousel/>
+    <HeroWithScrollIndicator/>
+    <PhoneFeatureSection/>
+    <ConnectedRoles/>
+    </div>
+  );
+}

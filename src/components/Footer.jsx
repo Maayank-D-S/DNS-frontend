@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn, FaYoutube, FaInstagram } from "react-icons/fa";
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -22,9 +23,7 @@ const Footer = () => {
                 <Link to="/impact">Our Mission</Link>
               </li>
               <li className="hover:underline cursor-pointer">
-                <button onClick={() => navigate('/products')} className="text-left">
-                  Our Products
-                </button>
+              <HashLink smooth to="/#products">Our Products</HashLink>
               </li>
             </ul>
             <ul className="space-y-2">

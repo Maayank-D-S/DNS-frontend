@@ -8,6 +8,7 @@ import ImpactPage from "./pages/ImpactPage";
 import BlogGrid from "./pages/BlogPage";
 import BlogContent from "./pages/BlogContent";
 import { ContactPage } from "./pages/ContactPage";
+import CSitePage from "./pages/CsitePage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/blogs" element={<BlogGrid/>} />
         <Route path="/blog/:id" element={<BlogContent/>} />
         <Route path="/contact" element={<ContactPage/>}/>
+        <Route path="/csite" element={<CSitePage/>}/>
       </Routes>
     </Router>
   );

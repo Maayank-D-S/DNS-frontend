@@ -74,7 +74,7 @@ export default function FeatureCarousel() {
               <h3 className="text-xl md:text-4xl font-bold mb-4">
                 One view to monitor all your projects
               </h3>
-              <p className="text-sm md:text-lg text-white/90">
+              <p className="text-xs md:text-lg text-white/90">
                 Track progress, delays, safety flags, material movement — in real time.
               </p>
             </div>

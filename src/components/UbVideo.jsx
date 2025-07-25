@@ -6,18 +6,18 @@ export default function UbVideo() {
     <section className="relative bg-black text-white flex flex-col items-center justify-center text-center py-28 px-4 overflow-hidden">
       {/* ─── BACKGROUND VIDEO ─────────────────────────── */}
       <div className="absolute inset-0">
-        {/* 
-          Put your <video> here, e.g.:
+        
+          {/* Put your <video> here, e.g.: */}
 
           <video
-            src="/your‑video.mp4"
+            src="/vidUb.mp4"
             autoPlay
             muted
             loop
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
-        */}
+       
       </div>
 
       {/* overlay to darken/matte the video slightly */}
@@ -42,7 +42,7 @@ export default function UbVideo() {
 
         {/* Call‑to‑action */}
         <a
-          href="/try-now"
+          href="/"
           className="
             mt-8 inline-block
             bg-black/60 hover:bg-black

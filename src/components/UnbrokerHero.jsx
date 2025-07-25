@@ -56,10 +56,10 @@ export default function UnBrokerHero() {
           transition={{ duration: 0.6, ease: 'easeInOut' }}
           
         >
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold font-inter">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold font-inter">
             Meet <span className="text-red-500">Un</span>Broker
           </h1>
-          <p className="mt-2 text-lg md:text-xl text-gray-400 font-inter">
+          <p className="mt-2 text-xl md:text-3xl text-gray-400 font-bold font-inter text-center">
             Discover, Don’t Search
           </p>
         </motion.div>

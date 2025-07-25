@@ -188,6 +188,15 @@ const Header = () => {
                   </button>
                   {showCSite && (
                     <ul className="mt-2 pl-4 space-y-1 text-sm text-white/80">
+                      <li>
+                        <Link
+                          to="/csite"
+                          className="hover:text-yellow-400"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          Visit CSite →
+                        </Link>
+                      </li>
                       <li>Project Planning</li>
                       <li>Scheduling</li>
                       <li>Execution tracking</li>
@@ -217,6 +226,15 @@ const Header = () => {
                   </button>
                   {showUnBroker && (
                     <ul className="mt-2 pl-4 space-y-1 text-sm text-white/80">
+                      <li>
+                        <Link
+                          to="/unbroker"
+                          className="hover:text-yellow-400"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          Visit Unbroker
+                        </Link>
+                      </li>
                       <li>Channel Partner Management</li>
                       <li>Digital Sales Tools</li>
                     </ul>
@@ -282,7 +300,13 @@ const Header = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
             {/* Column 1: Residential */}
             <div>
-              <h3 className="font-bold text-lg mb-4">CSite</h3>
+              <Link
+                to="/csite"
+                onClick={() => setShowProjects(false)}
+                className="font-bold text-lg mb-4 block hover:text-yellow-400 transition"
+              >
+                CSite 
+              </Link>
               <ul className="space-y-2 text-white/90">
                 <li>
                   <span className="block font-medium">Project Planning</span>
@@ -329,7 +353,13 @@ const Header = () => {
 
             {/* Column 2: Commercial */}
             <div>
-              <h3 className="font-bold text-lg mb-4">UnBroker</h3>
+              <Link
+                to="/unbroker"
+                onClick={() => setShowProjects(false)}
+                className="font-bold text-lg mb-4 block hover:text-yellow-400 transition"
+              >
+                Unbroker 
+              </Link>
               <ul className="space-y-2 text-white/90">
                 <li>
                   <span className="block font-medium">

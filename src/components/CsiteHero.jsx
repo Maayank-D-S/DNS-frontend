@@ -54,7 +54,7 @@ export default function CsiteHero() {
             inline-block
             text-white
             text-[8rem] sm:text-8xl md:text-[10rem] lg:text-[12rem]
-            font-bold
+            font-bold font-satoshi
             filter drop-shadow-[0_0_30px_rgba(255,255,255,0.9)]
           "
         >

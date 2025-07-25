@@ -21,7 +21,7 @@ export default function FeatureWithImage() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 0.6, ease: 'easeInOut' }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
         >
           <p className="text-2xl md:text-3xl font-bold font-sans leading-snug">
             Select on the go, get custom tailored suggestions on the go.
@@ -36,7 +36,7 @@ export default function FeatureWithImage() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 0.6, ease: 'easeInOut'}}
+          transition={{ duration: 1, ease: 'easeInOut'}}
         >
           <img
             src="/ub55.png"

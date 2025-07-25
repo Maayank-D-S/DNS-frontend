@@ -7,7 +7,7 @@ export default function HeroWithScrollIndicator() {
   return (
     <section className="relative bg-black text-white flex flex-col items-center justify-center min-h-screen px-4">
       {/* HEADLINE */}
-      <h1 className="text-4xl md:text-6xl font-bold mb-12 text-center">
+      <h1 className="text-4xl md:text-6xl font-bold mb-12 text-center font-satoshi">
         Everything, in one place.
       </h1>
 

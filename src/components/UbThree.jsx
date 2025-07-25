@@ -22,7 +22,7 @@ export default function UbThree() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 0.6, ease: 'easeInOut' }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
         >
           <img
             src="/ub3.png"
@@ -38,7 +38,7 @@ export default function UbThree() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 0.6, ease: 'easeInOut' }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
         >
           <p className="text-2xl md:text-3xl font-bold leading-snug font-inter text-center md:text-left">
             All legal documents available for instant verification.

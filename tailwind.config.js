@@ -12,6 +12,8 @@ module.exports = {
         // your custom Rajdhani still available via `font-rajdhani`
         rajdhani: ['Rajdhani', 'sans-serif'],
         figtree: ['"Figtree"', 'sans-serif'],
+        satoshi: ['Satoshi', 'sans-serif'],
+        sf: ['"SF Pro Display"', 'sans-serif'],
       },
     },
   },

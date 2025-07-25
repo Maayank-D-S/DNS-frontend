@@ -33,7 +33,7 @@ export default function PhoneFeatureSection() {
                     alt={rightFeatures[i].label}
                     className="w-8 h-8"
                   />
-                  <span className="text-lg">{rightFeatures[i].label}</span>
+                  <span className="text-lg font-satoshi">{rightFeatures[i].label}</span>
                 </li>
               </React.Fragment>
             ))}
@@ -58,7 +58,7 @@ export default function PhoneFeatureSection() {
             {leftFeatures.map((f, i) => (
               <li key={i} className="flex flex-col items-center space-y-2">
                 <img src={f.imageSrc} alt={f.label} className="w-8 h-8" />
-                <span className="text-lg">{f.label}</span>
+                <span className="text-lg font-satoshi">{f.label}</span>
               </li>
             ))}
           </ul>

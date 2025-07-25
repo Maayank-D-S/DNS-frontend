@@ -44,10 +44,10 @@ export default function FeatureCarousel() {
     <section className="py-16 overflow-hidden bg-black text-white">
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-12 px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 font-satoshi">
           The All‑In‑One Construction OS
         </h2>
-        <p className="text-lg md:text-xl text-white/80">
+        <p className="text-lg md:text-xl text-white/80 font-sf">
           All your site workflows, streamlined and synced
         </p>
       </div>
@@ -71,10 +71,10 @@ export default function FeatureCarousel() {
             }}
           >
             <div className="w-1/2 p-6 flex flex-col justify-center">
-              <h3 className="text-xl md:text-4xl font-bold mb-4">
+              <h3 className="text-xl md:text-4xl font-bold mb-4 font-sf">
                 One view to monitor all your projects
               </h3>
-              <p className="text-xs md:text-lg text-white/90">
+              <p className="text-xs md:text-lg text-white/90 font-sf">
                 Track progress, delays, safety flags, material movement — in real time.
               </p>
             </div>
@@ -106,10 +106,10 @@ export default function FeatureCarousel() {
             }}
           >
             <div className="w-1/2 p-6 flex flex-col justify-center">
-              <h3 className="text-xl md:text-4xl font-bold mb-4">
+              <h3 className="text-xl md:text-4xl font-bold mb-4 font-sf">
                 BIM‑Powered Planning
               </h3>
-              <p className="text-sm md:text-lg text-white/90">
+              <p className="text-sm md:text-lg text-white/90 font-sf">
                 We integrate with your BIM targets and timelines to auto‑assign, track, and alert.
               </p>
             </div>
@@ -141,10 +141,10 @@ export default function FeatureCarousel() {
             }}
           >
             <div className="w-1/2 p-6 flex flex-col justify-center">
-              <h3 className="text-xl md:text-4xl font-bold mb-4">
+              <h3 className="text-xl md:text-4xl font-bold mb-4 font-sf">
                 Real‑time Workforce Visibility
               </h3>
-              <p className="text-sm md:text-lg text-white/90">
+              <p className="text-sm md:text-lg text-white/90 font-sf">
                 Know who’s working, where they are, and what they’re doing — instantly.
               </p>
             </div>
@@ -176,10 +176,10 @@ export default function FeatureCarousel() {
             }}
           >
             <div className="w-1/2 p-6 flex flex-col justify-center">
-              <h3 className="text-xl md:text-4xl font-bold mb-4">
+              <h3 className="text-xl md:text-4xl font-bold mb-4 font-sf">
                 Quality Check Reports
               </h3>
-              <p className="text-sm md:text-lg text-gray-700">
+              <p className="text-sm md:text-lg text-gray-700 font-sf">
                 Log, track, and act on quality issues instantly.
               </p>
             </div>
@@ -211,10 +211,10 @@ export default function FeatureCarousel() {
             }}
           >
             <div className="w-1/2 p-6 flex flex-col justify-center">
-              <h3 className="text-xl md:text-4xl font-bold mb-4">
+              <h3 className="text-xl md:text-4xl font-bold mb-4 font-sf">
                 Live Inventory Tracking
               </h3>
-              <p className="text-sm md:text-lg text-gray-700">
+              <p className="text-sm md:text-lg text-gray-700 font-sf">
                 Know what’s on‑site, what’s coming, and what’s stuck.
               </p>
             </div>

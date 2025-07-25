@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function UbVideo() {
   return (
-    <section className="relative bg-black text-white flex flex-col items-center justify-center text-center py-28 px-4 overflow-hidden">
+    <section className="relative bg-black text-white flex flex-col items-center justify-center text-center min-h-[110vh] px-4 overflow-hidden">
       {/* ─── BACKGROUND VIDEO ─────────────────────────── */}
       <div className="absolute inset-0">
         
@@ -15,13 +15,13 @@ export default function UbVideo() {
             muted
             loop
             playsInline
-            className="w-full h-full object-contain"
+            className="absolute inset-0 w-full h-full object-cover"
           />
        
       </div>
 
       {/* overlay to darken/matte the video slightly */}
-      <div className="absolute inset-0 bg-black/50" />
+      {/* <div className="absolute inset-0 bg-black/20" /> */}
 
       {/* ─── TEXT CONTENT ─────────────────────────────── */}
       <div className="relative z-10 max-w-2xl">

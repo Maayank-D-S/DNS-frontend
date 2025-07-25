@@ -1,28 +1,50 @@
 // src/components/FeatureWithImage.jsx
-import React from 'react';
+import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function FeatureWithImage() {
+  const slideDown = {
+    hidden: { y: -60, opacity: 0 },
+    show:   { y: 0,   opacity: 1 }
+  }
+
+  // Animate when 30% visible, trigger only once
+  const viewport = { once: true, amount: 0.3 }
+
   return (
     <section className="bg-black text-white py-16 px-4 md:px-16">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-8">
-        
-        {/* Left text block */}
-        <div className="w-full md:w-1/2">
+        {/* Text block */}
+        <motion.div
+          className="w-full md:w-1/2"
+          variants={slideDown}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewport}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+        >
           <p className="text-2xl md:text-3xl font-semibold leading-snug">
-            Select on the go, get custom tailored suggestions on the go.  
+            Select on the go, get custom tailored suggestions on the go.
             Converse with our agents for real time responses.
           </p>
-        </div>
+        </motion.div>
 
-        {/* Right image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+        {/* Image block */}
+        <motion.div
+          className="w-full md:w-1/2 flex justify-center md:justify-end"
+          variants={slideDown}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewport}
+          transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
+        >
           <img
             src="/ub2.png"
             alt="Chat with AI agent"
             className="w-full max-w-sm rounded-2xl shadow-xl object-cover"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
-  );
+  )
 }

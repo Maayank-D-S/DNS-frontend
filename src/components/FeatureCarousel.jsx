@@ -71,7 +71,7 @@ export default function FeatureCarousel() {
             }}
           >
             <div className="w-1/2 p-6 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-4xl font-bold mb-4">
+              <h3 className="text-xl md:text-4xl font-bold mb-4">
                 One view to monitor all your projects
               </h3>
               <p className="text-sm md:text-lg text-white/90">
@@ -106,7 +106,7 @@ export default function FeatureCarousel() {
             }}
           >
             <div className="w-1/2 p-6 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-4xl font-bold mb-4">
+              <h3 className="text-xl md:text-4xl font-bold mb-4">
                 BIM‑Powered Planning
               </h3>
               <p className="text-sm md:text-lg text-white/90">
@@ -141,7 +141,7 @@ export default function FeatureCarousel() {
             }}
           >
             <div className="w-1/2 p-6 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-4xl font-bold mb-4">
+              <h3 className="text-xl md:text-4xl font-bold mb-4">
                 Real‑time Workforce Visibility
               </h3>
               <p className="text-sm md:text-lg text-white/90">
@@ -169,17 +169,17 @@ export default function FeatureCarousel() {
 
           {/* Slide #4 */}
           <div
-            className="flex-shrink-0 flex bg-white rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.5)] overflow-hidden"
+            className="flex-shrink-0 flex bg-white rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.5)] overflow-hidden text-black"
             style={{
               width: isMobile ? `${SLIDE_W_MOB}vw` : `${SLIDE_W_DESK}vw`,
               height: isMobile ? `${SLIDE_H_MOB}vw` : `${SLIDE_H_DESK}vh`
             }}
           >
             <div className="w-1/2 p-6 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-4xl font-bold mb-4">
+              <h3 className="text-xl md:text-4xl font-bold mb-4">
                 Quality Check Reports
               </h3>
-              <p className="text-sm md:text-lg text-gray-300">
+              <p className="text-sm md:text-lg text-gray-700">
                 Log, track, and act on quality issues instantly.
               </p>
             </div>
@@ -211,7 +211,7 @@ export default function FeatureCarousel() {
             }}
           >
             <div className="w-1/2 p-6 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-4xl font-bold mb-4">
+              <h3 className="text-xl md:text-4xl font-bold mb-4">
                 Live Inventory Tracking
               </h3>
               <p className="text-sm md:text-lg text-gray-700">

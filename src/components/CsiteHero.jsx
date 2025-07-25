@@ -81,7 +81,7 @@ export default function CsiteHero() {
           variants={leftTextVariant}
           initial="hidden"
           animate="show"
-          className="absolute top-2/3 md:top-1/2 left-6 md:left-12 max-w-xs text-white"
+          className="hidden md:block absolute top-2/3 md:top-1/2 left-6 md:left-12 max-w-xs text-white"
         >
           <p className="text-base md:text-lg leading-relaxed font-bold filter drop-shadow-[0_0_30px_rgba(255,255,255,0.9)]">
             Csite brings your entire project into one dashboard — from labor
@@ -95,7 +95,7 @@ export default function CsiteHero() {
           variants={rightTextVariant}
           initial="hidden"
           animate="show"
-          className="absolute top-1/2 right-6 md:right-12 max-w-xs text-white text-right"
+          className="hidden md:block absolute top-1/2 right-6 md:right-12 max-w-xs text-white text-right"
         >
           <p className="text-base md:text-lg leading-relaxed font-bold filter drop-shadow-[0_0_30px_rgba(255,255,255,0.9)]">
             Whether you’re handling one tower or ten, Csite scales with your

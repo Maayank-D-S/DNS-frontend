@@ -64,7 +64,7 @@ export default function FeatureCarousel() {
         >
           {/* Slide #1 */}
           <div
-            className="flex-shrink-0 flex bg-black rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.5)] overflow-hidden"
+            className="flex-shrink-0 flex bg-black rounded-xl shadow-[0_0_10px_rgba(255,255,255,0.5)] overflow-hidden"
             style={{
               width: isMobile ? `${SLIDE_W_MOB}vw` : `${SLIDE_W_DESK}vw`,
               height: isMobile ? `${SLIDE_H_MOB}vw` : `${SLIDE_H_DESK}vh`
@@ -99,7 +99,7 @@ export default function FeatureCarousel() {
 
           {/* Slide #2 */}
           <div
-            className="flex-shrink-0 flex bg-[#26232C] rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.5)] overflow-hidden"
+            className="flex-shrink-0 flex bg-[#26232C] rounded-xl shadow-[0_0_10px_rgba(255,255,255,0.5)] overflow-hidden"
             style={{
               width: isMobile ? `${SLIDE_W_MOB}vw` : `${SLIDE_W_DESK}vw`,
               height: isMobile ? `${SLIDE_H_MOB}vw` : `${SLIDE_H_DESK}vh`
@@ -134,7 +134,7 @@ export default function FeatureCarousel() {
 
           {/* Slide #3 */}
           <div
-            className="flex-shrink-0 flex bg-black rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.5)] overflow-hidden"
+            className="flex-shrink-0 flex bg-black rounded-xl shadow-[0_0_10px_rgba(255,255,255,0.5)] overflow-hidden"
             style={{
               width: isMobile ? `${SLIDE_W_MOB}vw` : `${SLIDE_W_DESK}vw`,
               height: isMobile ? `${SLIDE_H_MOB}vw` : `${SLIDE_H_DESK}vh`
@@ -169,7 +169,7 @@ export default function FeatureCarousel() {
 
           {/* Slide #4 */}
           <div
-            className="flex-shrink-0 flex bg-white rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.5)] overflow-hidden text-black"
+            className="flex-shrink-0 flex bg-white rounded-xl shadow-[0_0_10px_rgba(255,255,255,0.5)] overflow-hidden text-black"
             style={{
               width: isMobile ? `${SLIDE_W_MOB}vw` : `${SLIDE_W_DESK}vw`,
               height: isMobile ? `${SLIDE_H_MOB}vw` : `${SLIDE_H_DESK}vh`
@@ -204,7 +204,7 @@ export default function FeatureCarousel() {
 
           {/* Slide #5 */}
           <div
-            className="flex-shrink-0 flex bg-[#E6DAFF] rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.5)] overflow-hidden"
+            className="flex-shrink-0 flex bg-[#E6DAFF] rounded-xl shadow-[0_0_10px_rgba(255,255,255,0.5)] overflow-hidden"
             style={{
               width: isMobile ? `${SLIDE_W_MOB}vw` : `${SLIDE_W_DESK}vw`,
               height: isMobile ? `${SLIDE_H_MOB}vw` : `${SLIDE_H_DESK}vh`

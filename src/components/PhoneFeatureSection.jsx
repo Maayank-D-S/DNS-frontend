@@ -1,17 +1,16 @@
 // src/components/PhoneFeatureSection.jsx
 import React from 'react'
-import { HardHat, ClipboardList, Box, Clock, FileText, Activity } from 'lucide-react'
 
 const leftFeatures = [
-  { icon: <HardHat className="w-8 h-8 text-yellow-400" />, label: 'Labor Tracking' },
-  { icon: <Box className="w-8 h-8 text-yellow-400" />,     label: 'Inventory Management' },
-  { icon: <Clock className="w-8 h-8 text-yellow-400" />,    label: 'Daily Site Logs' },
+  { imageSrc: '/hard1.png',       label: 'Labor Tracking' },
+  { imageSrc: '/house.png', label: 'Inventory Management' },
+  { imageSrc: '/book.png',      label: 'Daily Site Logs' },
 ]
 
 const rightFeatures = [
-  { icon: <ClipboardList className="w-8 h-8 text-yellow-400" />, label: 'Dashboard Insights' },
-  { icon: <FileText className="w-8 h-8 text-yellow-400" />,     label: 'BIM‑Timeline Sync' },
-  { icon: <Activity className="w-8 h-8 text-yellow-400" />,     label: 'Quality & Safety Reports' },
+  { imageSrc: '/board.png',        label: 'Dashboard Insights' },
+  { imageSrc: '/cir.png',         label: 'BIM‑Timeline Sync' },
+  { imageSrc: '/snake.png',    label: 'Quality & Safety Reports' },
 ]
 
 export default function PhoneFeatureSection() {
@@ -19,22 +18,27 @@ export default function PhoneFeatureSection() {
     <section className="relative pb-10 bg-black text-white w-full overflow-hidden">
       <div className="w-full max-w-screen-xl mx-auto px-6 md:px-12 lg:px-0">
         
-        {/* ─── MOBILE: feature grid + video ───────────────────────────── */}
+        {/** ─── MOBILE: 2‑col grid + video ───────────────────────────── */}
         <div className="lg:hidden flex flex-col items-center mb-12">
           <ul className="grid grid-cols-2 gap-x-8 gap-y-12 w-full">
             {leftFeatures.map((f, i) => (
               <React.Fragment key={i}>
-                <li className="flex flex-col items-center space-y-2">
-                  {f.icon}
+                <li className="flex flex-col items-center text-center space-y-2">
+                  <img src={f.imageSrc} alt={f.label} className="w-10 h-10" />
                   <span className="text-lg">{f.label}</span>
                 </li>
-                <li className="flex flex-col items-center space-y-2">
-                  {rightFeatures[i].icon}
+                <li className="flex flex-col items-center text-center space-y-2">
+                  <img
+                    src={rightFeatures[i].imageSrc}
+                    alt={rightFeatures[i].label}
+                    className="w-8 h-8"
+                  />
                   <span className="text-lg">{rightFeatures[i].label}</span>
                 </li>
               </React.Fragment>
             ))}
           </ul>
+
           <div className="w-64 h-[600px] mt-8">
             <video
               src="/wf.mp4"
@@ -47,19 +51,19 @@ export default function PhoneFeatureSection() {
           </div>
         </div>
 
-        {/* ─── DESKTOP: pinned columns + centered video ────────────────── */}
+        {/** ─── DESKTOP: pinned columns + centered video ────────────────── */}
         <div className="hidden lg:block relative w-full h-[600px]">
-          {/* left features */}
+          {/* Left column */}
           <ul className="absolute top-0 left-0 flex flex-col items-center space-y-12 w-60">
             {leftFeatures.map((f, i) => (
               <li key={i} className="flex flex-col items-center space-y-2">
-                {f.icon}
+                <img src={f.imageSrc} alt={f.label} className="w-8 h-8" />
                 <span className="text-lg">{f.label}</span>
               </li>
             ))}
           </ul>
 
-          {/* centered video */}
+          {/* Center video */}
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-64 h-full">
             <video
               src="/wf.mp4"
@@ -71,11 +75,11 @@ export default function PhoneFeatureSection() {
             />
           </div>
 
-          {/* right features */}
+          {/* Right column */}
           <ul className="absolute top-0 right-0 flex flex-col items-center space-y-12 w-60">
             {rightFeatures.map((f, i) => (
               <li key={i} className="flex flex-col items-center space-y-2">
-                {f.icon}
+                <img src={f.imageSrc} alt={f.label} className="w-8 h-8" />
                 <span className="text-lg">{f.label}</span>
               </li>
             ))}

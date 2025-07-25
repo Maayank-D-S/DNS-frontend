@@ -2,14 +2,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-export default function UbSecond() {
+export default function FeatureWithImage() {
+  // slide down from 80px above + fade in
   const slideDown = {
     hidden: { y: -80, opacity: 0 },
-    show:   { y: 0,   opacity: 1 }
+    show:   { y:   0, opacity: 1 }
   }
 
-  // trigger when 30% of element is visible, run only once
-  const viewport = { amount: 0.3 }
+  // fire when 30% visible, only once
+  const viewport = {  amount: 0.3 }
 
   return (
     <section className="bg-black text-white py-16 px-4 md:px-16">
@@ -22,9 +23,9 @@ export default function UbSecond() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 0.6, ease: 'easeIn' }}
+          transition={{ duration: 0.6, ease: 'easeInOut' }}
         >
-          <p className="text-2xl md:text-3xl font-semibold leading-snug">
+          <p className="text-2xl md:text-3xl font-semibold font-inter leading-snug">
             Commercial, Residential, Land Banks—We have all of them
           </p>
         </motion.div>
@@ -36,7 +37,7 @@ export default function UbSecond() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 0.6, ease: 'easeIn'}}
+          transition={{ duration: 0.6, ease: 'easeInOut' }}
         >
           <img
             src="/ye.png"

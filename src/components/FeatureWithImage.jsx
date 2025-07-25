@@ -21,9 +21,9 @@ export default function FeatureWithImage() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 0.6, ease: 'easeIn' }}
+          transition={{ duration: 0.6, ease: 'easeInOut' }}
         >
-          <p className="text-2xl md:text-3xl font-semibold leading-snug">
+          <p className="text-2xl md:text-3xl font-semibold font-sans leading-snug">
             Select on the go, get custom tailored suggestions on the go.
             Converse with our agents for real time responses.
           </p>
@@ -36,10 +36,10 @@ export default function FeatureWithImage() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 0.6, ease: 'easeIn'}}
+          transition={{ duration: 0.6, ease: 'easeInOut'}}
         >
           <img
-            src="/ub2.png"
+            src="/ub55.png"
             alt="Chat with AI agent"
             className="w-full max-w-sm rounded-2xl shadow-xl object-cover"
           />

@@ -32,7 +32,7 @@ export default function UnBrokerHero() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 1.2, ease: 'easeIn' }}
+          transition={{ duration: 0.6, ease: 'easeInOut' }}
         >
           <img
             src="/ub1.png"
@@ -53,13 +53,13 @@ export default function UnBrokerHero() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: 'easeInOut' }}
           
         >
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold font-inter">
             Meet <span className="text-red-500">Un</span>Broker
           </h1>
-          <p className="mt-2 text-lg md:text-xl text-gray-400">
+          <p className="mt-2 text-lg md:text-xl text-gray-400 font-inter">
             Discover, Don’t Search
           </p>
         </motion.div>

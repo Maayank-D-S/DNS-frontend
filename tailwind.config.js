@@ -7,7 +7,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        rajdhani: ['"Rajdhani"', 'sans-serif'],
+        // now `font-sans` will use Inter
+        inter: ['InterCustom', 'sans-serif'],
+        // your custom Rajdhani still available via `font-rajdhani`
+        rajdhani: ['Rajdhani', 'sans-serif'],
+        figtree: ['"Figtree"', 'sans-serif'],
       },
     },
   },

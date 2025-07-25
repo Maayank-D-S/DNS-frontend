@@ -23,7 +23,7 @@ export default function FeatureWithImage() {
           viewport={viewport}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
         >
-          <p className="text-2xl md:text-3xl font-semibold font-sans leading-snug">
+          <p className="text-2xl md:text-3xl font-bold font-sans leading-snug">
             Select on the go, get custom tailored suggestions on the go.
             Converse with our agents for real time responses.
           </p>

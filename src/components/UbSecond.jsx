@@ -25,7 +25,7 @@ export default function FeatureWithImage() {
           viewport={viewport}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
         >
-          <p className="text-2xl md:text-3xl font-semibold font-inter leading-snug">
+          <p className="text-2xl md:text-3xl font-bold font-inter leading-snug">
             Commercial, Residential, Land Banks—We have all of them
           </p>
         </motion.div>

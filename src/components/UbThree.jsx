@@ -40,7 +40,7 @@ export default function UbThree() {
           viewport={viewport}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
         >
-          <p className="text-2xl md:text-3xl font-semibold leading-snug font-inter text-center md:text-left">
+          <p className="text-2xl md:text-3xl font-bold leading-snug font-inter text-center md:text-left">
             All legal documents available for instant verification.
           </p>
         </motion.div>

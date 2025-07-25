@@ -10,7 +10,7 @@ export default function UnBrokerHero() {
   }
 
   // animate once when 30% visible
-  const viewport = { once: true, amount: 0.3 }
+  const viewport = { amount: 0.3 }
 
   return (
     <section className="bg-black text-white py-20 px-4 md:px-16">
@@ -32,7 +32,7 @@ export default function UnBrokerHero() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 2, ease: 'easeIn' }}
+          transition={{ duration: 1.2, ease: 'easeIn' }}
         >
           <img
             src="/ub1.png"
@@ -53,7 +53,8 @@ export default function UnBrokerHero() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          
         >
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold">
             Meet <span className="text-red-500">Un</span>Broker

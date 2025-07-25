@@ -4,12 +4,12 @@ import { motion } from 'framer-motion'
 
 export default function UbSecond() {
   const slideDown = {
-    hidden: { y: -60, opacity: 0 },
+    hidden: { y: -80, opacity: 0 },
     show:   { y: 0,   opacity: 1 }
   }
 
   // trigger when 30% of element is visible, run only once
-  const viewport = { once: true, amount: 0.3 }
+  const viewport = { amount: 0.3 }
 
   return (
     <section className="bg-black text-white py-16 px-4 md:px-16">
@@ -22,7 +22,7 @@ export default function UbSecond() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: 'easeIn' }}
         >
           <p className="text-2xl md:text-3xl font-semibold leading-snug">
             Commercial, Residential, Land Banks—We have all of them
@@ -36,7 +36,7 @@ export default function UbSecond() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          transition={{ duration: 0.6, ease: 'easeIn'}}
         >
           <img
             src="/ye.png"

@@ -4,12 +4,12 @@ import { motion } from 'framer-motion'
 
 export default function FeatureWithImage() {
   const slideDown = {
-    hidden: { y: -60, opacity: 0 },
+    hidden: { y: -80, opacity: 0 },
     show:   { y: 0,   opacity: 1 }
   }
 
   // Animate when 30% visible, trigger only once
-  const viewport = { once: true, amount: 0.3 }
+  const viewport = { amount: 0.3 }
 
   return (
     <section className="bg-black text-white py-16 px-4 md:px-16">
@@ -21,7 +21,7 @@ export default function FeatureWithImage() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: 'easeIn' }}
         >
           <p className="text-2xl md:text-3xl font-semibold leading-snug">
             Select on the go, get custom tailored suggestions on the go.
@@ -36,7 +36,7 @@ export default function FeatureWithImage() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
+          transition={{ duration: 0.6, ease: 'easeIn'}}
         >
           <img
             src="/ub2.png"

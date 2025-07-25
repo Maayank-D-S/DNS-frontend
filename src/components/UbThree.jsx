@@ -4,12 +4,12 @@ import { motion } from 'framer-motion'
 
 export default function UbThree() {
   const slideDown = {
-    hidden: { y: -60, opacity: 0 },
+    hidden: { y: -80, opacity: 0 },
     show:   { y: 0,   opacity: 1 }
   }
 
   // Common viewport settings:
-  const viewport = { once: true, amount: 0.3 }  // fire when 30% visible, only once
+  const viewport = {  amount: 0.3 }  // fire when 30% visible, only once
 
   return (
     <section className="bg-black text-white py-16 px-4 md:px-16">
@@ -22,7 +22,7 @@ export default function UbThree() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: 'easeIn' }}
         >
           <img
             src="/ub3.png"
@@ -38,7 +38,7 @@ export default function UbThree() {
           initial="hidden"
           whileInView="show"
           viewport={viewport}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          transition={{ duration: 0.6, ease: 'easeIn' }}
         >
           <p className="text-2xl md:text-3xl font-semibold leading-snug text-center md:text-left">
             All legal documents available for instant verification.

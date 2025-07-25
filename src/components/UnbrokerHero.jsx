@@ -17,11 +17,11 @@ export default function UnBrokerHero() {
       <div
         className="
           max-w-7xl mx-auto
-          flex flex-col-reverse      /* mobile: text above image */
+          flex flex-col-reverse      
           items-center
-          gap-8                      /* mobile vertical gap */
-          md:flex-row               /* desktop: image left, text right */
-          md:gap-x-40               /* desktop horizontal gap */
+          gap-8                     
+          md:flex-row               
+          md:gap-x-40               
           md:items-center
         "
       >
@@ -37,7 +37,12 @@ export default function UnBrokerHero() {
           <img
             src="/ub1.png"
             alt="UnBroker Logo"
-            className="w-[90vw] max-w-full md:w-[400px] h-[300px] rounded-2xl shadow-lg object-cover"
+            className="
+              w-[90vw] max-w-full md:w-[400px] h-[300px]
+              rounded-2xl shadow-lg
+              object-cover
+            mix-blend-screen    
+            "
           />
         </motion.div>
 

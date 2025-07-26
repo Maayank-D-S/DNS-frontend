@@ -7,13 +7,15 @@ import Footer from '../components/Footer'
 import { useEffect } from 'react'
 import UbHeader from '../components/UbHeader'
 import UbVideo from '../components/UbVideo'
+import Header from '../components/Header'
 
 const UbPage = () => {
   useEffect(() => {
           window.scrollTo(0, 0);
         }, []);
   return (
-    <div>
+    <div className='bg-black'>
+      <Header/>
       <UbHeader/>
       
       <UnBrokerHero/>

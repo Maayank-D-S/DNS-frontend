@@ -6,10 +6,10 @@ import {Link} from 'react-router-dom'; // or 'react-router-dom'
 export default function UbHeader() {
   return (
     <header className="
-      absolute inset-x-0 top-0 z-50
+      absolute inset-x-0 top-12 z-20
       flex items-center justify-between
       px-6 py-4 md:px-12 lg:px-24
-      bg-transparent   /* make it transparent */
+      bg-transparent   
     ">
       {/* left: logo + text */}
       <Link to="/" className="flex items-center gap-3">

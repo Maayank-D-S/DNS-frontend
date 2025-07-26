@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import WhyChooseUs from "../components/WhyChooseUs";
 import CsiteHeader from "../components/CsiteHeader";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default function CSitePage() {
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function CSitePage() {
       }, []);
   return(
     <div className="bg-black">
+    <Header/>
     <CsiteHeader/>
     <CsiteHero/>
     <FeatureCarousel/>

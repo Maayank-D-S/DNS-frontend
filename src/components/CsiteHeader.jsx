@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'; // or 'react-router-dom'
 export default function CsiteHeader() {
   return (
     <header className="
-      absolute inset-x-0 top-0 z-50
+      absolute inset-x-0 top-14 z-50
       flex items-center justify-between
       px-6 py-4 md:px-12 lg:px-24
       bg-transparent   /* make it transparent */

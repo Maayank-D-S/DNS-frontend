@@ -21,7 +21,7 @@ export default function UnBrokerHero() {
   const viewport = { amount: 0.3 };
 
   return (
-    <section className="bg-black text-white py-20 px-4 md:px-16">
+    <section className="bg-black text-white py-20 mt-5 px-4 md:px-16">
       <div className="max-w-7xl mx-auto flex flex-col-reverse items-center gap-8 md:flex-row md:gap-x-40 md:items-center">
         {/* Image */}
         <motion.div

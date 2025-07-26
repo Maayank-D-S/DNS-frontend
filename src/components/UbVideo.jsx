@@ -15,7 +15,7 @@ export default function UbVideo() {
             muted
             loop
             playsInline
-            className="absolute inset-0 w-[70vh] md:w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-contain sm:object-cover"
           />
        
       </div>

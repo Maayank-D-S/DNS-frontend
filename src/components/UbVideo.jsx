@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function UbVideo() {
   return (
-    <section className="relative bg-black text-white flex flex-col items-center justify-center text-center  px-4 overflow-hidden h-[100vh] sm:h-[110vh] md:h-[100vh]">
+    <section className="relative bg-black text-white flex flex-col items-center justify-center text-center  px-4 overflow-hidden h-[70vh] sm:h-[110vh] md:h-[100vh]">
       {/* ─── BACKGROUND VIDEO ─────────────────────────── */}
       <div className="absolute inset-0">
         

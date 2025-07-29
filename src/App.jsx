@@ -11,6 +11,7 @@ import BlogContent from "./pages/BlogContent";
 import { ContactPage } from "./pages/ContactPage";
 import CSitePage from "./pages/CsitePage";
 import UbPage from "./pages/UbPage";
+import VoiceAgent from "./pages/VaPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contact" element={<ContactPage/>}/>
         <Route path="/csite" element={<CSitePage/>}/>
         <Route path="/unbroker" element={<UbPage/>}/>
+        <Route path="/voice" element={<VoiceAgent/>}/>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

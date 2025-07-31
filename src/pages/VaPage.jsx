@@ -7,7 +7,7 @@ const LIVEKIT_WS_URL = 'wss://ds-nl2qsdc2.livekit.cloud';
 export default function VoiceAgent() {
   const [roomName, setRoomName] = useState(`room-${Math.random().toString(36).slice(2, 8)}`);
 
-  const [userId, setUserId] = useState('frontend-user-1');
+  const [userId, setUserId] = useState(`frontend-${Math.random().toString(36).slice(2, 8)}`);
   const roomRef = useRef(null);
 
   const handleJoin = async () => {
